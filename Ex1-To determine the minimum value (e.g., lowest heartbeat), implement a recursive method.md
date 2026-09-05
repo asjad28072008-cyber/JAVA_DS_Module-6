@@ -78,7 +78,8 @@ public class HealthMonitor {
 
 ## Output:
 
-<img width="701" height="351" alt="image" src="https://github.com/user-attachments/assets/fd17a50d-7edd-4e8b-ba04-a75996c8430b" />
+<img width="708" height="542" alt="image" src="https://github.com/user-attachments/assets/b6bc27a0-daea-460e-990e-cd4992cbe2f3" />
+
 
 
 
