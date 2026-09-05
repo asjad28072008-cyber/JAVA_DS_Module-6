@@ -21,19 +21,22 @@ RegisterNumber: 212225240091
 ```
 
 ```
+import java.util.Scanner;
+
 public class HealthMonitor {
 
-    // Recursive method to find the minimum value in an array
-    public static int findMinimum(int[] arr, int n) {
-        // Base case: if the array has only one element, return it
+    // 1. Recursive method taking the array and current size 'n'
+    public static int findMin(int[] arr, int n) {
+        // 2. Base case: If size n is 1, return the first element
         if (n == 1) {
             return arr[0];
         }
-        
-        // Recursive call to find the minimum in the first n-1 elements
-        int minOfRest = findMinimum(arr, n - 1);
-        
-        // Return the smaller value between the current element and the minimum of the rest
+
+        // 3. Recursive step: Call with a reduced size (n - 1)
+        int minOfRest = findMin(arr, n - 1);
+
+        // 4. Compare current element at index (n - 1) with minimum returned
+        // 5. Return the smaller value
         if (arr[n - 1] < minOfRest) {
             return arr[n - 1];
         } else {
@@ -42,25 +45,41 @@ public class HealthMonitor {
     }
 
     public static void main(String[] args) {
-        // Sample heartbeat sensor readings
-        int[] heartbeatReadings = {72, 68, 85, 58, 90, 64};
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of sensor readings: ");
+        int n = scanner.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Please enter a valid size greater than 0.");
+            return;
+        }
+
+        int[] readings = new int[n];
+        System.out.println("Enter the " + n + " sensor readings (e.g. heartbeats):");
+        for (int i = 0; i < n; i++) {
+            readings[i] = scanner.nextInt();
+        }
+
+        // Execute the recursive calculation
+        int minReading = findMin(readings, n);
+
+        System.out.println("\n--- Result ---");
+        System.out.println("The lowest heartbeat value is: " + minReading);
         
-        System.out.println("Analyzing sensor data...");
-        
-        // Execute the recursive method
-        int lowestHeartbeat = findMinimum(heartbeatReadings, heartbeatReadings.length);
-        
-        // Print the result
-        System.out.println("Lowest heartbeat recorded: " + lowestHeartbeat + " bpm");
+        scanner.close();
     }
 }
+
+
 
 ```
 
 
 ## Output:
 
-<img width="695" height="207" alt="image" src="https://github.com/user-attachments/assets/c3b71606-ae60-4d20-a9e7-c9124acadded" />
+<img width="701" height="351" alt="image" src="https://github.com/user-attachments/assets/fd17a50d-7edd-4e8b-ba04-a75996c8430b" />
+
 
 
 ## Result:
