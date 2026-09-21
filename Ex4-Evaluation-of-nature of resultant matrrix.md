@@ -103,7 +103,7 @@ public class MatrixAdditionInput {
 ```
 ## Output:
 
-<img width="902" height="627" alt="image" src="https://github.com/user-attachments/assets/718a9781-c5a1-42e8-bb12-7aa39c22b55c" />
+<img width="497" height="691" alt="image" src="https://github.com/user-attachments/assets/4bcdf5e3-4c30-4954-ade5-f38d2676d2d9" />
 
 
 <img width="795" height="637" alt="image" src="https://github.com/user-attachments/assets/6bbc0322-3d85-40ae-9883-6bd254973668" />
