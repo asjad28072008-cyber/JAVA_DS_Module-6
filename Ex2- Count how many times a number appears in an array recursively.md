@@ -72,7 +72,8 @@ public class ArrayOccurrenceCounter {
 
 ## Output:
 
-<img width="782" height="437" alt="image" src="https://github.com/user-attachments/assets/be8ec27d-dbb4-486f-a414-7417b33ca94b" />
+<img width="1066" height="622" alt="image" src="https://github.com/user-attachments/assets/6bb55b6b-c842-475d-90fa-734723b27f5f" />
+
 
 
 ## Result:
