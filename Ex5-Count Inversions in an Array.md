@@ -97,7 +97,7 @@ public class InversionCounter {
 
 ## Output:
 
-<img width="711" height="560" alt="image" src="https://github.com/user-attachments/assets/7cdbeb56-0c02-491b-84d2-698b1054de68" />
+<img width="527" height="387" alt="image" src="https://github.com/user-attachments/assets/7c29b345-43a6-4219-8d4c-cb8b027470b4" />
 
 
 ## Result:
